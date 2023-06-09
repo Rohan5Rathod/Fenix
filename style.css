@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+}
+/* top section  */
+.top{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://images.unsplash.com/photo-1446587114233-38830eb63a76?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-size: cover;
+    background-position: 0% 70%;
+}
+.overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 25%;
+    padding: 0 6vw;
+}
+
+.text h1{
+    font-size: 6vw;
+    font-weight: 400;
+    color: white;
+}
+.textright{
+    width: 50%;
+    display: flex;
+    align-items:end;
+    justify-content: space-between;
+}
+
+.textright p{
+    color: white;
+    font-weight: 500;
+    font-size: 0.9vw;
+}
+
+.icon{
+    color: white;
+    display: flex;
+    gap: 1vw;
+}
+/* top section  */
+
+/* bottom section  */
+.bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+    background-color: #586f7c;
+}
+
+.b1{
+    padding: 70px;
+    width: 25%;
+    min-height: inherit;
+    background-color: #fff;
+}
+.b1 h3{
+    opacity: 0.8;
+    font-size: 1vw;
+    font-weight: 500;
+    margin-bottom: 2vw;
+}
+.b1 p{
+    font-weight: 500;
+}
+.b2{
+    width: 25%;
+    min-height: inherit;
+   background-image: url(https://images.unsplash.com/photo-1593836749980-771c6c9408bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80);
+   background-size: cover;
+   background-position: center;
+}
+.b3{
+    width: 25%;
+    min-height: inherit;
+}
+
+.b3top{
+    padding: 30px 40px;
+    width: 100%;
+    min-height: 20vh;
+    color: white;
+    background-color: orangered;
+}
+.b3top h3{
+    font-size: 1vw;
+    font-weight: 500;
+    margin-bottom: 1.5vw;
+}
+.b3top p{
+    font-weight: 300;
+}
+
+.b3bottom{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://images.unsplash.com/photo-1442458017215-285b83f65851?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+.b4{
+    width: 25%;
+    min-height: inherit;
+    background-color: rgb(15, 14, 14);
+    color: white;
+    padding: 40px;
+}
+
+.notf{
+    margin-top: 1.5vw;
+    margin-bottom: 2.5vw;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.notf .photo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: url(https://opoyi.com/wp-content/uploads/2023/01/ingo-stiller-3tkxfe2GocY-unsplash_SIiigFFk_-scaled.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.notf p{
+    opacity: 0.8;
+    font-size: 0.9vw;
+    font-weight: 300;
+}
+/* bottom section  */
+
+@media(max-width:500px){
+    /* top section  */
+    .overlay .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .text .textright{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text h1{
+        font-size: 10vw;
+        font-weight: 500;
+        color: white;
+    }
+
+    .textright p{
+        margin-top: 20px;
+        font-size: 3vw;
+    }
+
+    .icon{
+        margin-top: 5vh;
+        display: flex;
+        gap: 1.5rem;
+    }
+    /* top section  */
+
+    /* bottom section  */
+    .bottom{
+        flex-direction: column;
+    }
+
+    .b1, .b2, .b3, .b4{
+        width: 100%;
+    }
+    .b1{
+        padding: 50px 40px;
+        min-height: 30vh;
+    }
+    .b1 h3{
+        opacity: 0.8;
+        font-size: 6vw;
+        font-weight: 500;
+        margin-bottom: 4vw;
+    }
+    .b1 p{
+        font-weight: 500;
+    }
+
+    .b3top h3{
+        font-size: 6vw;
+    }
+
+    .notf{
+        margin-top: 10vw;
+        margin-bottom: 8vw;
+        gap: 5vw;
+    }
+    .notf p{
+        font-size: 4vw;
+        font-weight: 300;
+    }
+    /* bottom section  */
+}
